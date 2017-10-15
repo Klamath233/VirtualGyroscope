@@ -1,37 +1,27 @@
-## Welcome to GitHub Pages
+# Virtual Gyroscope
+Xi Han, Xu Zhang, Zhanming Zhang
 
-You can use the [editor on GitHub](https://github.com/Klamath233/VirtualGyroscope/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Abstract
+Gyroscope is one of the major energy consumer among the IMU sensors. The optimization of energy cost of such senser is of huge interest because IMU sensers have broad applications, such as on cell phones to faciliate user interface, on UAVs to help navigate and of course, robotics. Most of the applications depend on battaries or even passively-harvested energy. In this work, we will seek for possibilities to duty-cycle the gyroscope when its result can be reliably approximated by data from sensors that consume less power, such as accelerometers and magnetometers. In specific, we are interested in under what condition the approximation is and is not reliable, and why. We will start from this paper[<sup>1</sup>][1] of Baptiste et al.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Proposal
+Baptiste and his colleagues have proposed two method for emulating a gyroscope with an accelerometer and a magnetometer. Base on their work, our tentitive first step of this work is to implement and compare the two methods. In particular, we'd like to investigate in what scenario which method works better, and also the implementation subtlties of each method.
 
-### Markdown
+After that, we will compare the data from the emulation with the data from a true gyroscope. By analyzing the data, we'd like to investigate any possibility that we can create a model for the accuracy of the emulation given different conditions so that we may duty-cycle the gyroscope when the accuracy is high. 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+After we come up with a model, we will then implement the model on a real platform and see how it works! More to come when we reach there.
 
-```markdown
-Syntax highlighted code block
+## Schedule
 
-# Header 1
-## Header 2
-### Header 3
+| Week No. | Objective                           |
+|----------------------------------------------- |
+| Week 3   | Proposal and Schedule               |
+| Week 4   | Implementation of the algorithms    |
+| Week 5   | Implementation of the algorithms    |
+| Week 6   | Modeling                            |
+| Week 7   | Modeling                            |
+| Week 8   | On-board implementation and testing |
+| Week 9   | On-board implementation and testing |
+| Week 10  | Conclusion, report and demo         |
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Klamath233/VirtualGyroscope/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+[1]: https://hal-enpc.archives-ouvertes.fr/file/index/docid/826243/filename/AccelerometerAndMagnetometerBasedGyroscopeSensorAndTransducteurJournal.pdf
