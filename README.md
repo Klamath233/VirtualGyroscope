@@ -14,7 +14,7 @@ After we come up with a model, we will then implement the model on a real platfo
 ## Schedule
 
 | Week No. | Objective                           |
-|----------------------------------------------- |
+|----------|------------------------------------ |
 | Week 3   | Proposal and Schedule               |
 | Week 4   | Implementation of the algorithms    |
 | Week 5   | Implementation of the algorithms    |
